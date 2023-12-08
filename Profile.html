@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        header{
+            margin-left: 35px;
+        }
+
+        div {
+            font-size: 20px;
+            color: green;
+            margin-left: 35px;
+        }
+
+        nav {
+            margin-left: 35px;
+
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display:flex;
+        }
+
+        nav li {
+            margin-right: 35px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            position: relative;
+            transition: color 0.5s ease;
+        }
+        
+        nav a:before {
+            content: '-';
+            position: absolute;
+            left: -10px;
+            opacity: 0;  /*처음에는 감춤 */
+            transition: opacity 0.3s ease;
+        }
+
+        nav li:hover a {
+            color: blanchedalmond; 
+            /* 클릭할 때 텍스트 색상 변경 */
+        }
+
+        nav li:hover a:before {
+            opacity: 1;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('./image/HB.jpg');
+            background-size: contain;
+            background-position: right;
+            background-repeat: no-repeat;
+        }
+
+        body{ 
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            /* margin:0; */
+        }
+
+        footer{
+            color: green;
+            margin-top: auto;
+        }
+    </style>    
+</head>
+
+<body>
+    <header>
+        <h1>Profile</h1>
+        <h4>Name: Kim Hajong</h4>
+        <h4>Birth: 2001-06-25</h4>
+        <h4>Major: SmartFarm</h4>
+        <h4>School: Jeonbuk National University</h4>
+
+    </header>
+    <div> 🔗Link
+    </div>    
+    <nav>
+        <ul>
+            <li><a href="https://sfarm.jbnu.ac.kr/jsf/index.do">JBNU Smart Farm</a></li>
+            <li><a href="https://sfarm.jbnu.ac.kr/jsf/21912/subview.do?enc=Zm5jdDF8QEB8JTJGamJudVByb2ZsJTJGanNmJTJGNjEwJTJGNjUxOCUyRmFydGNsVmlldy5kbyUzRnBhZ2UlM0QxJTI2ZmluZFR5cGUlM0QlMjZmaW5kV29yZCUzRCUyNg%3D%3D">Supervisor</a></li>
+            
+        </ul>
+    </nav>
+  
+    <footer>
+        <p>&copy; I'll bet my life on Smart Farms.</p>
+    </footer>
+</body>
+
+</html>

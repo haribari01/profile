@@ -1,0 +1,225 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    overflow: hidden; 
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+    /* 뒷 배경 검정 */
+}
+
+.wrap{ 
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* padding: 10px; */
+    background-color:rgba(127, 255, 212, 0.358);
+    width: 100vw;
+    height: 85vh;
+    position: relative;
+    /* 중간을 녹색으로  */
+
+}
+
+.homeimg-section { 
+    width: 300px;
+    float: left; 
+    /* display: flex;
+    align-items: center; */
+} 
+
+.homeinfo-section{
+    width: calc(100% - 300px); 
+    height: 100%; 
+    background-color: aliceblue;
+    float: right; 
+    /* info 부분 aliceblue 색 배경 */
+}
+
+.homeimg{  
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: -150px;
+    transition: color 0.5s;
+}
+.homeimg:hover{
+    color: black;
+}
+
+h4 { 
+    letter-spacing:2px;
+    margin-top: 28px;
+    margin-left: 22px;
+    transition: color 0.5s;
+} 
+
+h4:hover{
+    color: black;
+}
+
+.github-group-section{  
+    margin-top: 50px;
+}
+
+
+.github-group {
+    display:flex;
+    align-items: center;
+    margin-left:20px;
+    padding: 10px;
+    transition: color 0.5s;
+}
+
+.fa-github{
+    font-size: 30px;
+    margin-right: 10px;
+    color: white; 
+}
+
+.github-text{
+    font-size: 22px;
+    color: white;
+    margin-left: 10px;
+}
+
+.github-group:hover .fa-github,
+.github-group:hover .github-text{
+    color: rgb(34, 24, 50);
+}
+
+.instagram-group-section{ 
+    margin-top: 50px;
+}
+
+.instagram-group {
+    display:flex;
+    align-items: center;
+    margin-left:20px;
+    padding: 10px;
+    transition: color 0.5s;
+    
+}
+
+.fa-instagram{
+    font-size: 30px;
+    margin-right: 10px;
+    color: white;
+}
+
+.instagram-text{
+    font-size: 22px;
+    color: white;
+    margin-left: 10px;
+}
+
+.instagram-group:hover .fa-instagram,
+.instagram-group:hover .instagram-text{
+    color: rgb(242, 103, 242);
+}
+
+.update-date{
+    font-size: 14px;
+    /* margin-top: 240px; */
+    color: whitesmoke;
+    margin-left: 20px;
+    width:100%;
+    position:absolute;
+    bottom: 0;
+}
+/* ---------------------------------------여기까지 homeimage-section-------------------------------------- */
+
+.content-section {
+    font-size: 27px; 
+    margin-top: -15px; 
+    color: green; 
+    margin-left: 20px;
+    transition: color 0.5s;
+}
+
+.content-section:hover{
+    color: black;
+}
+
+.profile-section{
+    margin-top: 40px;
+}
+
+.profile-section a {
+    font-size: 35px; 
+    color: green; 
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.profile-section a:hover {
+    color: black; 
+}
+
+.profile-section p {
+    font-size: 18px;
+    margin-top: 20px; 
+    color: black; 
+    margin-left: 20px;
+    transition: color 0.5s;
+}
+
+.profile-section p:hover{
+    color: red;
+}
+
+.dream-section{
+    margin-top: 50px;
+}
+.dream-section a {
+    font-size: 35px; 
+    color: green; 
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.dream-section a:hover {
+    color: black; 
+}
+
+.dream-section p {
+    font-size: 18px;
+    margin-top: 20px; 
+    color: black; 
+    margin-left: 20px;
+    transition: color 0.5s;
+}
+
+.dream-section p:hover{
+    color: red;
+}
+
+.interest-section{
+    margin-top: 50px;
+}
+.interest-section a {
+    font-size: 35px; 
+    color: green; 
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.interest-section a:hover {
+    color: black; 
+}
+
+.interest-section p {
+    font-size: 18px;
+    margin-top: 20px; 
+    color: black; 
+    margin-left: 20px;
+    transition: color 0.5s;
+}
+
+.interest-section p:hover{
+    color: red;
+}

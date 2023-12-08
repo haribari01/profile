@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        header {
+            margin-left: 35px;
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url('./image/22.jpg');
+            background-size: contain;
+            background-position: right;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+        }
+        
+        body{
+            color: black;
+        }
+
+        h4:nth-child(2) {
+            color: green;
+        }
+
+        nav {
+            margin-left: 35px;
+
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display:flex;
+            flex-direction: column;
+            margin-left: -15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:before {
+            content: '-';
+            position: absolute;
+            left: -10px;
+            opacity: 0;  /*처음에는 감춤 */
+            transition: opacity 0.5s ease;
+        }
+
+        nav li:hover a {
+            color: blanchedalmond; 
+            /* 클릭할 때 텍스트 색상 변경 */
+        }
+
+        nav li:hover a:before {
+            opacity: 1;
+        }
+
+        main{
+            margin-left: 35px;
+        }
+
+        video{
+            /* margin-left: 500px; */
+            position: absolute;
+            bottom:80px;
+            left:40%;
+            transform: translateX(-40%)
+        }
+
+        body{ 
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        footer{
+            color: green;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Interest</h1>
+        <h4>🌱Success comes when preparation meets opportunity.🌱</h4>
+        <h4></h4>
+        <h4></h4>
+        
+    </header>
+
+    <main>
+        <section>
+            <h2>Sport</h2>
+            <nav>
+                <ul>
+                    <li><a href="https://www.tottenhamhotspur.com/kr/">Soccer</a></li>
+                    <li><a href="https://comic.naver.com/webtoon/list?titleId=814587">Table Tennis</a></li>
+                    <li><a href="https://www.youtube.com/shorts/My5WbMiwdqs">Jokgu</a></li>
+                </ul>
+            </nav>
+
+        </section>
+
+        <article>
+            <h2>Music</h2>
+            <nav>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=nMM6h9Yf348&list=PL1NIZU3DfRCXOqfnwPMWReucXo7lknV3C">Classic</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=kfnMvo87fQU">Musical</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=tdVAqxNLXiw">ColdPlay</a></li>
+                </ul>
+            </nav>
+            
+        </article>
+    </main>
+
+    <video controls loop src="./image/SF.mp4" width="400" height="259"> </video>
+    <br>
+    <br>
+    <footer>
+        <p>&copy; The opportunity to change my life has come. </p>
+    </footer>
+</body>
+
+</html>
